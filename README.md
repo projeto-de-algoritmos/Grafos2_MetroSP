@@ -1,45 +1,36 @@
-**!! Atenção: Renomeie o seu repositório para (Tema)_(NomeDoProjeto). !!** 
+# Metro SP
 
-Temas:
- - Grafos1
- - Grafos2
- - PD
- - D&C
- - Greed
- - Final 
- 
- **!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: Grafos2_Labirinto-do-Minotauro !!**
- 
- (Apague essa seção)
-
-# NomedoProjeto
-
-**Número da Lista**: X<br>
-**Conteúdo da Disciplina**: XXXXXXXXXX<br>
+**Número da Lista**: 2<br>
+**Conteúdo da Disciplina**: Grafos 2<br>
 
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 18/0114689  |  Tiago Samuel Rodrigues |
+| 18/0113666  |  Ítalo Álves Guimarães |
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+Este projeto tem como objetivo mostrar o menor caminho possível para percorrer todas as estações de metrô de São Paulo. O projeto utiliza dos algoritmos aprendidos na disciplina e do Algoritmo de Prim para achar o menor caminho possível entre todas as estações.
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
 
 ## Instalação 
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
+**Linguagem**: Javascript<br>
+**Framework**: React.js<br>
 Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+Possuir o npm instalado na máquina
 
-## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
+## Uso
+clone o repositório
+
+entre na pasta do repositório
+
+rode
+```
+  npm install
+  npm start
+```
+Navegue até [localhost:3000](http://localhost:3000)
 
 ## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
-
-
-
-
+Algumas estações mostradas no mapa podem não estar disponíveis para busca.
