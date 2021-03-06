@@ -38,7 +38,7 @@ const BFS = (startStation, endStation) => {
   return false
 }
 
-export const getInstructions = (startStation, endStation) => {
+export const getInstructions = (startStation, endStation, tourMode) => {
   const mensagens = []
 
   if (!BFS(startStation, endStation)) {
