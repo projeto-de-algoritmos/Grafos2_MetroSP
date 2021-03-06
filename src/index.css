@@ -65,7 +65,7 @@ button {
 }
 .travel {
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .travel .travel-icon {
   display: flex;
@@ -77,8 +77,8 @@ button {
   flex-direction: column;
   flex: 1;
 }
-.travel .choice:first-child {
-  margin-bottom: 15px;
+.travel .choice:last-child {
+  margin-top: 15px;
 }
 
 .travel .travel_select__control {
@@ -106,10 +106,75 @@ button {
   font-weight: 500;
   color: #231f20;
 }
+
+/* Switch */
+.travel-mode {
+  margin-bottom: 20px;
+}
+.travel-mode input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.switch-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.switch-label .label {
+  position: relative;
+  cursor: pointer;
+  display: inline;
+}
+.switch-label p {
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 0 10px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #c4c4c4;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.slider:before {
+  position: absolute;
+  border-radius: 50%;
+  content: '';
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #fff;
+  transition: 0.4s;
+}
+input:checked + .slider {
+  background-color: #ef4035;
+}
+input:checked + .slider:before {
+  transform: translateX(16px);
+}
+input:focus + .slider {
+  box-shadow: 0 0 5px #ef4035;
+}
+
 .travel-error {
   font-weight: 500;
   font-size: 15px;
   color: #fcbd0f;
+  text-align: center;
+  margin-bottom: 30px;
   transition: 0.5s;
   opacity: 0;
   visibility: hidden;
@@ -127,13 +192,15 @@ button {
   border-radius: 10px;
   font-size: 15px;
   color: #fff;
+  cursor: pointer;
   padding: 10px 35px;
+  transition: 0.5s;
 }
 .travel-submit button:hover {
   background-color: #fcbd0f;
 }
 .travel-submit button:focus {
-  background-color: #ed4e17;
+  background-color: #ef4035;
 }
 
 .instructions {

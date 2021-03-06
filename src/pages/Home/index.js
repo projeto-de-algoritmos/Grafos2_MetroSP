@@ -27,8 +27,9 @@ const captions = [
 ]
 
 const Home = () => {
-  const [partida, setPartida] = useState(-1)
-  const [destino, setDestino] = useState(-1)
+  const [partida, setPartida] = useState({ value: -1, label: 'Partida' })
+  const [destino, setDestino] = useState({ value: -1, label: 'Destino' })
+  const [tourMode, setTourMode] = useState(true)
   const [error, setError] = useState('')
   const [instructions, setInstructions] = useState([])
 
@@ -39,7 +40,11 @@ const Home = () => {
   const travelError = (message) => {
     if (message) {
       setError(message)
-    } else if (partida === destino && partida !== -1) {
+    } else if (
+      !tourMode &&
+      partida.value !== -1 &&
+      partida.value === destino.value
+    ) {
       setError('A partida e o destino não podem ser iguais.')
     } else {
       setError('')
@@ -47,28 +52,38 @@ const Home = () => {
   }
 
   const handleTravel = () => {
-    if (partida === -1 || destino === -1) {
+    if (tourMode && partida.value === -1) {
+      travelError('Selecione a partida.')
+      return
+    }
+    if (!tourMode && (partida.value === -1 || destino.value === -1)) {
       travelError('Selecione a partida e o destino.')
       return
     }
-    if (partida === destino) {
+    if (!tourMode && partida.value === destino.value) {
       return
     }
 
-    const travel = getInstructions(partida, destino)
+    const travel = getInstructions(partida.value, destino.value, tourMode)
     setInstructions(travel)
   }
 
   useEffect(() => {
     travelError()
-  }, [partida, destino])
+
+    if (tourMode) {
+      setInstructions([
+        'Digite a estação de partida para viajar por todas as estações.',
+      ])
+    } else {
+      setInstructions([
+        'Digite a estação de partida e a de destino para receber o trajeto.',
+      ])
+    }
+  }, [partida, destino, tourMode])
 
   useEffect(() => {
     map.current.zoom(width / 2, height / 2, 1.4)
-
-    setInstructions([
-      'Digite a estação de partida e a de destino para receber o trajeto.',
-    ])
   }, [])
 
   return (
@@ -87,36 +102,56 @@ const Home = () => {
             </div>
           </div>
           <div className='travel'>
-            <div className='travel-icon'>
-              <img src={pathImage} height={70} alt='path' />
-            </div>
+            {!tourMode ? (
+              <div className='travel-icon'>
+                <img src={pathImage} height={65} alt='path' />
+              </div>
+            ) : null}
             <div className='travel-choices'>
               <div className='choice'>
                 <Select
                   className='travel_select_container'
                   classNamePrefix='travel_select'
-                  placeholder='Partida'
+                  value={partida}
                   options={options}
-                  onChange={(option) => setPartida(option.value)}
+                  onChange={(option) => setPartida(option)}
                 />
               </div>
-              <div className='choice'>
-                <Select
-                  className='travel_select_container'
-                  classNamePrefix='travel_select'
-                  placeholder='Destino'
-                  options={options}
-                  onChange={(option) => setDestino(option.value)}
-                />
-              </div>
+              {!tourMode ? (
+                <div className='choice'>
+                  <Select
+                    className='travel_select_container'
+                    classNamePrefix='travel_select'
+                    value={destino}
+                    options={options}
+                    onChange={(option) => setDestino(option)}
+                  />
+                </div>
+              ) : null}
             </div>
+          </div>
+          <div className='travel-mode'>
+            <label className='switch-label' htmlFor='switch-input'>
+              <div className='switch'>
+                <input
+                  type='checkbox'
+                  id='switch-input'
+                  checked={tourMode}
+                  onChange={() => setTourMode(!tourMode)}
+                />
+                <span className='slider' />
+              </div>
+              <div className='label'>
+                <p>Modo Turista</p>
+              </div>
+            </label>
           </div>
           <div className={`travel-error ${error ? 'has-error' : ''}`}>
             <p>{error}</p>
           </div>
           <div className='travel-submit'>
             <button type='button' onClick={handleTravel}>
-              Buscar
+              {!tourMode ? 'Buscar' : 'Fazer Tour'}
             </button>
           </div>
         </div>
@@ -182,7 +217,7 @@ const Home = () => {
               width={width}
               height={height}
               defaultTool={TOOL_PAN}
-              scaleFactorMin={1}
+              scaleFactorMin={0.8}
               scaleFactorMax={5}
               background='#e5e5e5'
               SVGBackground='#e5e5e5'
