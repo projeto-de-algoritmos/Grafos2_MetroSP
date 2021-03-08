@@ -7,8 +7,8 @@
     "id": 0,
     "neighboringStations": [
       {
-        "weight": 10,
-        "node": 1
+        "node": 1,
+        "weight": 10
       }
     ]
   },
@@ -20,12 +20,12 @@
     "id": 1,
     "neighboringStations": [
       {
-        "weight": 1,
-        "node": 0
+        "node": 0,
+        "weight": 10
       },
       {
-        "weight": 2,
-        "node": 2
+        "node": 2,
+        "weight": 2
       }
     ]
   },
@@ -37,12 +37,12 @@
     "id": 2,
     "neighboringStations": [
       {
-        "weight": 9,
-        "node": 1
+        "node": 1,
+        "weight": 2
       },
       {
-        "weight": 8,
-        "node": 3
+        "node": 3,
+        "weight": 8
       }
     ]
   },
@@ -54,12 +54,12 @@
     "id": 3,
     "neighboringStations": [
       {
-        "weight": 7,
-        "node": 2
+        "node": 2,
+        "weight": 8
       },
       {
-        "weight": 8,
-        "node": 4
+        "node": 4,
+        "weight": 8
       }
     ]
   },
@@ -71,12 +71,12 @@
     "id": 4,
     "neighboringStations": [
       {
-        "weight": 1,
-        "node": 3
+        "node": 3,
+        "weight": 8
       },
       {
-        "weight": 3,
-        "node": 5
+        "node": 5,
+        "weight": 3
       }
     ]
   },
@@ -88,12 +88,12 @@
     "id": 5,
     "neighboringStations": [
       {
-        "weight": 8,
-        "node": 4
+        "node": 4,
+        "weight": 3
       },
       {
-        "weight": 10,
-        "node": 6
+        "node": 6,
+        "weight": 10
       }
     ]
   },
@@ -105,12 +105,12 @@
     "id": 6,
     "neighboringStations": [
       {
-        "weight": 3,
-        "node": 5
+        "node": 5,
+        "weight": 10
       },
       {
-        "weight": 1,
-        "node": 7
+        "node": 7,
+        "weight": 1
       }
     ]
   },
@@ -122,12 +122,12 @@
     "id": 7,
     "neighboringStations": [
       {
-        "weight": 5,
-        "node": 6
+        "node": 6,
+        "weight": 1
       },
       {
-        "weight": 1,
-        "node": 8
+        "node": 8,
+        "weight": 1
       }
     ]
   },
@@ -139,16 +139,16 @@
     "id": 8,
     "neighboringStations": [
       {
-        "weight": 1,
-        "node": 7
+        "node": 7,
+        "weight": 1
       },
       {
-        "weight": 2,
-        "node": 9
+        "node": 9,
+        "weight": 2
       },
       {
-        "weight": 9,
-        "node": 52
+        "node": 52,
+        "weight": 9
       }
     ]
   },
@@ -160,12 +160,12 @@
     "id": 9,
     "neighboringStations": [
       {
-        "weight": 4,
-        "node": 8
+        "node": 8,
+        "weight": 2
       },
       {
-        "weight": 3,
-        "node": 10
+        "node": 10,
+        "weight": 3
       }
     ]
   },
@@ -177,20 +177,20 @@
     "id": 10,
     "neighboringStations": [
       {
-        "weight": 3,
-        "node": 9
+        "node": 9,
+        "weight": 3
       },
       {
-        "weight": 10,
-        "node": 11
+        "node": 11,
+        "weight": 10
       },
       {
-        "weight": 1,
-        "node": 53
+        "node": 53,
+        "weight": 1
       },
       {
-        "weight": 2,
-        "node": 55
+        "node": 55,
+        "weight": 2
       }
     ]
   },
@@ -202,12 +202,12 @@
     "id": 11,
     "neighboringStations": [
       {
-        "weight": 3,
-        "node": 10
+        "node": 10,
+        "weight": 10
       },
       {
-        "weight": 6,
-        "node": 12
+        "node": 12,
+        "weight": 6
       }
     ]
   },
@@ -219,12 +219,12 @@
     "id": 12,
     "neighboringStations": [
       {
-        "weight": 7,
-        "node": 11
+        "node": 11,
+        "weight": 6
       },
       {
-        "weight": 7,
-        "node": 13
+        "node": 13,
+        "weight": 7
       }
     ]
   },
@@ -236,12 +236,12 @@
     "id": 13,
     "neighboringStations": [
       {
-        "weight": 1,
-        "node": 12
+        "node": 12,
+        "weight": 7
       },
       {
-        "weight": 2,
-        "node": 14
+        "node": 14,
+        "weight": 2
       }
     ]
   },
@@ -253,16 +253,16 @@
     "id": 14,
     "neighboringStations": [
       {
-        "weight": 1,
-        "node": 13
+        "node": 13,
+        "weight": 2
       },
       {
-        "weight": 4,
-        "node": 15
+        "node": 15,
+        "weight": 4
       },
       {
-        "weight": 3,
-        "node": 28
+        "node": 28,
+        "weight": 3
       }
     ]
   },
@@ -274,16 +274,16 @@
     "id": 15,
     "neighboringStations": [
       {
-        "weight": 1,
-        "node": 14
+        "node": 14,
+        "weight": 4
       },
       {
-        "weight": 2,
-        "node": 16
+        "node": 16,
+        "weight": 2
       },
       {
-        "weight": 3,
-        "node": 31
+        "node": 31,
+        "weight": 3
       }
     ]
   },
@@ -295,12 +295,12 @@
     "id": 16,
     "neighboringStations": [
       {
-        "weight": 10,
-        "node": 15
+        "node": 15,
+        "weight": 2
       },
       {
-        "weight": 8,
-        "node": 17
+        "node": 17,
+        "weight": 8
       }
     ]
   },
@@ -312,20 +312,20 @@
     "id": 17,
     "neighboringStations": [
       {
-        "weight": 8,
-        "node": 16
+        "node": 16,
+        "weight": 8
       },
       {
-        "weight": 8,
-        "node": 18
+        "node": 18,
+        "weight": 8
       },
       {
-        "weight": 10,
-        "node": 92
+        "node": 92,
+        "weight": 10
       },
       {
-        "weight": 1,
-        "node": 31
+        "node": 31,
+        "weight": 1
       }
     ]
   },
@@ -337,12 +337,12 @@
     "id": 18,
     "neighboringStations": [
       {
-        "weight": 9,
-        "node": 17
+        "node": 17,
+        "weight": 8
       },
       {
-        "weight": 7,
-        "node": 19
+        "node": 19,
+        "weight": 7
       }
     ]
   },
@@ -354,12 +354,12 @@
     "id": 19,
     "neighboringStations": [
       {
-        "weight": 8,
-        "node": 18
+        "node": 18,
+        "weight": 7
       },
       {
-        "weight": 1,
-        "node": 20
+        "node": 20,
+        "weight": 1
       }
     ]
   },
@@ -371,12 +371,12 @@
     "id": 20,
     "neighboringStations": [
       {
-        "weight": 1,
-        "node": 19
+        "node": 19,
+        "weight": 1
       },
       {
-        "weight": 9,
-        "node": 21
+        "node": 21,
+        "weight": 9
       }
     ]
   },
@@ -388,12 +388,12 @@
     "id": 21,
     "neighboringStations": [
       {
-        "weight": 6,
-        "node": 20
+        "node": 20,
+        "weight": 9
       },
       {
-        "weight": 2,
-        "node": 22
+        "node": 22,
+        "weight": 2
       }
     ]
   },
@@ -405,8 +405,8 @@
     "id": 22,
     "neighboringStations": [
       {
-        "weight": 4,
-        "node": 21
+        "node": 21,
+        "weight": 2
       }
     ]
   },
@@ -418,8 +418,8 @@
     "id": 23,
     "neighboringStations": [
       {
-        "weight": 1,
-        "node": 24
+        "node": 24,
+        "weight": 1
       }
     ]
   },
@@ -431,12 +431,12 @@
     "id": 24,
     "neighboringStations": [
       {
-        "weight": 2,
-        "node": 23
+        "node": 23,
+        "weight": 1
       },
       {
-        "weight": 10,
-        "node": 25
+        "node": 25,
+        "weight": 10
       }
     ]
   },
@@ -448,12 +448,12 @@
     "id": 25,
     "neighboringStations": [
       {
-        "weight": 9,
-        "node": 24
+        "node": 24,
+        "weight": 10
       },
       {
-        "weight": 9,
-        "node": 26
+        "node": 26,
+        "weight": 9
       }
     ]
   },
@@ -465,20 +465,20 @@
     "id": 26,
     "neighboringStations": [
       {
-        "weight": 5,
-        "node": 25
+        "node": 25,
+        "weight": 9
       },
       {
-        "weight": 9,
-        "node": 27
+        "node": 27,
+        "weight": 100000
       },
       {
-        "weight": 1000,
-        "node": 106
+        "node": 106,
+        "weight": 10
       },
       {
-        "weight": 6,
-        "node": 73
+        "node": 73,
+        "weight": 6
       }
     ]
   },
@@ -490,12 +490,12 @@
     "id": 27,
     "neighboringStations": [
       {
-        "weight": 6,
-        "node": 26
+        "node": 26,
+        "weight": 9
       },
       {
-        "weight": 1,
-        "node": 28
+        "node": 28,
+        "weight": 1
       }
     ]
   },
@@ -507,12 +507,12 @@
     "id": 28,
     "neighboringStations": [
       {
-        "weight": 3,
-        "node": 27
+        "node": 14,
+        "weight": 3
       },
       {
-        "weight": 1,
-        "node": 14
+        "node": 27,
+        "weight": 1
       }
     ]
   },
@@ -524,16 +524,16 @@
     "id": 31,
     "neighboringStations": [
       {
-        "weight": 1,
-        "node": 15
+        "node": 15,
+        "weight": 3
       },
       {
-        "weight": 10,
-        "node": 32
+        "node": 17,
+        "weight": 1
       },
       {
-        "weight": 2,
-        "node": 17
+        "node": 32,
+        "weight": 10
       }
     ]
   },
@@ -545,12 +545,12 @@
     "id": 32,
     "neighboringStations": [
       {
-        "weight": 6,
-        "node": 31
+        "node": 31,
+        "weight": 10
       },
       {
-        "weight": 10,
-        "node": 33
+        "node": 33,
+        "weight": 10
       }
     ]
   },
@@ -562,12 +562,12 @@
     "id": 33,
     "neighboringStations": [
       {
-        "weight": 10,
-        "node": 32
+        "node": 32,
+        "weight": 10
       },
       {
-        "weight": 10,
-        "node": 34
+        "node": 34,
+        "weight": 10
       }
     ]
   },
@@ -579,12 +579,12 @@
     "id": 34,
     "neighboringStations": [
       {
-        "weight": 5,
-        "node": 33
+        "node": 33,
+        "weight": 10
       },
       {
-        "weight": 6,
-        "node": 35
+        "node": 35,
+        "weight": 6
       }
     ]
   },
@@ -596,12 +596,12 @@
     "id": 35,
     "neighboringStations": [
       {
-        "weight": 5,
-        "node": 34
+        "node": 34,
+        "weight": 6
       },
       {
-        "weight": 7,
-        "node": 111
+        "node": 111,
+        "weight": 7
       }
     ]
   },
@@ -613,12 +613,12 @@
     "id": 43,
     "neighboringStations": [
       {
-        "weight": 4,
-        "node": 60
+        "node": 60,
+        "weight": 4
       },
       {
-        "weight": 2,
-        "node": 62
+        "node": 62,
+        "weight": 2
       }
     ]
   },
@@ -630,8 +630,8 @@
     "id": 49,
     "neighboringStations": [
       {
-        "weight": 10,
-        "node": 50
+        "node": 50,
+        "weight": 10
       }
     ]
   },
@@ -643,12 +643,12 @@
     "id": 50,
     "neighboringStations": [
       {
-        "weight": 5,
-        "node": 49
+        "node": 49,
+        "weight": 10
       },
       {
-        "weight": 7,
-        "node": 51
+        "node": 51,
+        "weight": 7
       }
     ]
   },
@@ -660,12 +660,12 @@
     "id": 51,
     "neighboringStations": [
       {
-        "weight": 1,
-        "node": 50
+        "node": 50,
+        "weight": 7
       },
       {
-        "weight": 6,
-        "node": 52
+        "node": 52,
+        "weight": 6
       }
     ]
   },
@@ -677,20 +677,20 @@
     "id": 52,
     "neighboringStations": [
       {
-        "weight": 3,
-        "node": 51
+        "node": 8,
+        "weight": 9
       },
       {
-        "weight": 9,
-        "node": 53
+        "node": 51,
+        "weight": 6
       },
       {
-        "weight": 7,
-        "node": 106
+        "node": 53,
+        "weight": 9
       },
       {
-        "weight": 4,
-        "node": 8
+        "node": 106,
+        "weight": 7
       }
     ]
   },
@@ -702,12 +702,12 @@
     "id": 53,
     "neighboringStations": [
       {
-        "weight": 7,
-        "node": 52
+        "node": 10,
+        "weight": 1
       },
       {
-        "weight": 8,
-        "node": 10
+        "node": 52,
+        "weight": 9
       }
     ]
   },
@@ -719,12 +719,12 @@
     "id": 55,
     "neighboringStations": [
       {
-        "weight": 3,
-        "node": 10
+        "node": 10,
+        "weight": 2
       },
       {
-        "weight": 4,
-        "node": 56
+        "node": 56,
+        "weight": 4
       }
     ]
   },
@@ -736,12 +736,12 @@
     "id": 56,
     "neighboringStations": [
       {
-        "weight": 2,
-        "node": 55
+        "node": 55,
+        "weight": 4
       },
       {
-        "weight": 6,
-        "node": 57
+        "node": 57,
+        "weight": 6
       }
     ]
   },
@@ -753,12 +753,12 @@
     "id": 57,
     "neighboringStations": [
       {
-        "weight": 10,
-        "node": 56
+        "node": 56,
+        "weight": 6
       },
       {
-        "weight": 6,
-        "node": 58
+        "node": 58,
+        "weight": 6
       }
     ]
   },
@@ -770,12 +770,12 @@
     "id": 58,
     "neighboringStations": [
       {
-        "weight": 3,
-        "node": 57
+        "node": 57,
+        "weight": 6
       },
       {
-        "weight": 2,
-        "node": 59
+        "node": 59,
+        "weight": 2
       }
     ]
   },
@@ -787,12 +787,12 @@
     "id": 59,
     "neighboringStations": [
       {
-        "weight": 4,
-        "node": 58
+        "node": 58,
+        "weight": 2
       },
       {
-        "weight": 7,
-        "node": 60
+        "node": 60,
+        "weight": 7
       }
     ]
   },
@@ -804,12 +804,12 @@
     "id": 60,
     "neighboringStations": [
       {
-        "weight": 9,
-        "node": 59
+        "node": 43,
+        "weight": 4
       },
       {
-        "weight": 7,
-        "node": 43
+        "node": 59,
+        "weight": 7
       }
     ]
   },
@@ -821,12 +821,12 @@
     "id": 62,
     "neighboringStations": [
       {
-        "weight": 7,
-        "node": 43
+        "node": 43,
+        "weight": 2
       },
       {
-        "weight": 5,
-        "node": 63
+        "node": 63,
+        "weight": 5
       }
     ]
   },
@@ -838,12 +838,12 @@
     "id": 63,
     "neighboringStations": [
       {
-        "weight": 7,
-        "node": 62
+        "node": 62,
+        "weight": 5
       },
       {
-        "weight": 8,
-        "node": 64
+        "node": 64,
+        "weight": 8
       }
     ]
   },
@@ -855,12 +855,12 @@
     "id": 64,
     "neighboringStations": [
       {
-        "weight": 1,
-        "node": 63
+        "node": 63,
+        "weight": 8
       },
       {
-        "weight": 7,
-        "node": 65
+        "node": 65,
+        "weight": 7
       }
     ]
   },
@@ -872,12 +872,12 @@
     "id": 65,
     "neighboringStations": [
       {
-        "weight": 1,
-        "node": 64
+        "node": 64,
+        "weight": 7
       },
       {
-        "weight": 7,
-        "node": 66
+        "node": 66,
+        "weight": 7
       }
     ]
   },
@@ -889,8 +889,8 @@
     "id": 66,
     "neighboringStations": [
       {
-        "weight": 3,
-        "node": 65
+        "node": 65,
+        "weight": 7
       }
     ]
   },
@@ -902,8 +902,8 @@
     "id": 67,
     "neighboringStations": [
       {
-        "weight": 9,
-        "node": 128
+        "node": 128,
+        "weight": 9
       }
     ]
   },
@@ -915,12 +915,12 @@
     "id": 69,
     "neighboringStations": [
       {
-        "weight": 7,
-        "node": 128
+        "node": 128,
+        "weight": 7
       },
       {
-        "weight": 1,
-        "node": 70
+        "node": 70,
+        "weight": 1
       }
     ]
   },
@@ -932,12 +932,12 @@
     "id": 70,
     "neighboringStations": [
       {
-        "weight": 2,
-        "node": 69
+        "node": 69,
+        "weight": 1
       },
       {
-        "weight": 8,
-        "node": 71
+        "node": 71,
+        "weight": 8
       }
     ]
   },
@@ -949,12 +949,12 @@
     "id": 71,
     "neighboringStations": [
       {
-        "weight": 2,
-        "node": 70
+        "node": 70,
+        "weight": 8
       },
       {
-        "weight": 9,
-        "node": 72
+        "node": 72,
+        "weight": 9
       }
     ]
   },
@@ -966,12 +966,12 @@
     "id": 72,
     "neighboringStations": [
       {
-        "weight": 2,
-        "node": 71
+        "node": 71,
+        "weight": 9
       },
       {
-        "weight": 1,
-        "node": 73
+        "node": 73,
+        "weight": 1
       }
     ]
   },
@@ -983,12 +983,12 @@
     "id": 73,
     "neighboringStations": [
       {
-        "weight": 3,
-        "node": 72
+        "node": 26,
+        "weight": 6
       },
       {
-        "weight": 4,
-        "node": 26
+        "node": 72,
+        "weight": 1
       }
     ]
   },
@@ -1000,8 +1000,8 @@
     "id": 78,
     "neighboringStations": [
       {
-        "weight": 5,
-        "node": 79
+        "node": 79,
+        "weight": 5
       }
     ]
   },
@@ -1013,12 +1013,12 @@
     "id": 79,
     "neighboringStations": [
       {
-        "weight": 6,
-        "node": 78
+        "node": 78,
+        "weight": 5
       },
       {
-        "weight": 5,
-        "node": 80
+        "node": 80,
+        "weight": 5
       }
     ]
   },
@@ -1030,12 +1030,12 @@
     "id": 80,
     "neighboringStations": [
       {
-        "weight": 7,
-        "node": 79
+        "node": 79,
+        "weight": 5
       },
       {
-        "weight": 10,
-        "node": 81
+        "node": 81,
+        "weight": 10
       }
     ]
   },
@@ -1047,12 +1047,12 @@
     "id": 81,
     "neighboringStations": [
       {
-        "weight": 9,
-        "node": 80
+        "node": 80,
+        "weight": 10
       },
       {
-        "weight": 5,
-        "node": 82
+        "node": 82,
+        "weight": 5
       }
     ]
   },
@@ -1064,12 +1064,12 @@
     "id": 82,
     "neighboringStations": [
       {
-        "weight": 9,
-        "node": 81
+        "node": 81,
+        "weight": 5
       },
       {
-        "weight": 7,
-        "node": 83
+        "node": 83,
+        "weight": 7
       }
     ]
   },
@@ -1081,12 +1081,12 @@
     "id": 83,
     "neighboringStations": [
       {
-        "weight": 9,
-        "node": 82
+        "node": 82,
+        "weight": 7
       },
       {
-        "weight": 6,
-        "node": 84
+        "node": 84,
+        "weight": 6
       }
     ]
   },
@@ -1098,12 +1098,12 @@
     "id": 84,
     "neighboringStations": [
       {
-        "weight": 7,
-        "node": 83
+        "node": 83,
+        "weight": 6
       },
       {
-        "weight": 7,
-        "node": 85
+        "node": 85,
+        "weight": 7
       }
     ]
   },
@@ -1115,12 +1115,12 @@
     "id": 85,
     "neighboringStations": [
       {
-        "weight": 8,
-        "node": 84
+        "node": 84,
+        "weight": 7
       },
       {
-        "weight": 1,
-        "node": 86
+        "node": 86,
+        "weight": 1
       }
     ]
   },
@@ -1132,12 +1132,12 @@
     "id": 86,
     "neighboringStations": [
       {
-        "weight": 5,
-        "node": 85
+        "node": 85,
+        "weight": 1
       },
       {
-        "weight": 3,
-        "node": 87
+        "node": 87,
+        "weight": 3
       }
     ]
   },
@@ -1149,12 +1149,12 @@
     "id": 87,
     "neighboringStations": [
       {
-        "weight": 10,
-        "node": 86
+        "node": 86,
+        "weight": 3
       },
       {
-        "weight": 9,
-        "node": 136
+        "node": 136,
+        "weight": 9
       }
     ]
   },
@@ -1166,12 +1166,12 @@
     "id": 89,
     "neighboringStations": [
       {
-        "weight": 7,
-        "node": 136
+        "node": 136,
+        "weight": 7
       },
       {
-        "weight": 7,
-        "node": 90
+        "node": 90,
+        "weight": 7
       }
     ]
   },
@@ -1183,12 +1183,12 @@
     "id": 90,
     "neighboringStations": [
       {
-        "weight": 10,
-        "node": 89
+        "node": 89,
+        "weight": 7
       },
       {
-        "weight": 2,
-        "node": 91
+        "node": 91,
+        "weight": 2
       }
     ]
   },
@@ -1200,12 +1200,12 @@
     "id": 91,
     "neighboringStations": [
       {
-        "weight": 9,
-        "node": 90
+        "node": 90,
+        "weight": 2
       },
       {
-        "weight": 10,
-        "node": 92
+        "node": 92,
+        "weight": 10
       }
     ]
   },
@@ -1217,12 +1217,12 @@
     "id": 92,
     "neighboringStations": [
       {
-        "weight": 1,
-        "node": 91
+        "node": 17,
+        "weight": 10
       },
       {
-        "weight": 3,
-        "node": 17
+        "node": 91,
+        "weight": 10
       }
     ]
   },
@@ -1234,12 +1234,12 @@
     "id": 106,
     "neighboringStations": [
       {
-        "weight": 3,
-        "node": 26
+        "node": 26,
+        "weight": 10
       },
       {
-        "weight": 7,
-        "node": 52
+        "node": 52,
+        "weight": 7
       }
     ]
   },
@@ -1251,8 +1251,8 @@
     "id": 110,
     "neighboringStations": [
       {
-        "weight": 3,
-        "node": 111
+        "node": 111,
+        "weight": 3
       }
     ]
   },
@@ -1264,16 +1264,16 @@
     "id": 111,
     "neighboringStations": [
       {
-        "weight": 3,
-        "node": 35
+        "node": 35,
+        "weight": 7
       },
       {
-        "weight": 7,
-        "node": 110
+        "node": 110,
+        "weight": 3
       },
       {
-        "weight": 6,
-        "node": 112
+        "node": 112,
+        "weight": 6
       }
     ]
   },
@@ -1285,12 +1285,12 @@
     "id": 112,
     "neighboringStations": [
       {
-        "weight": 9,
-        "node": 111
+        "node": 111,
+        "weight": 6
       },
       {
-        "weight": 1,
-        "node": 113
+        "node": 113,
+        "weight": 1
       }
     ]
   },
@@ -1302,12 +1302,12 @@
     "id": 113,
     "neighboringStations": [
       {
-        "weight": 8,
-        "node": 112
+        "node": 112,
+        "weight": 1
       },
       {
-        "weight": 1,
-        "node": 114
+        "node": 114,
+        "weight": 1
       }
     ]
   },
@@ -1319,12 +1319,12 @@
     "id": 114,
     "neighboringStations": [
       {
-        "weight": 8,
-        "node": 113
+        "node": 113,
+        "weight": 1
       },
       {
-        "weight": 9,
-        "node": 115
+        "node": 115,
+        "weight": 9
       }
     ]
   },
@@ -1336,12 +1336,12 @@
     "id": 115,
     "neighboringStations": [
       {
-        "weight": 10,
-        "node": 114
+        "node": 114,
+        "weight": 9
       },
       {
-        "weight": 5,
-        "node": 116
+        "node": 116,
+        "weight": 5
       }
     ]
   },
@@ -1353,12 +1353,12 @@
     "id": 116,
     "neighboringStations": [
       {
-        "weight": 3,
-        "node": 115
+        "node": 115,
+        "weight": 5
       },
       {
-        "weight": 3,
-        "node": 117
+        "node": 117,
+        "weight": 3
       }
     ]
   },
@@ -1370,12 +1370,12 @@
     "id": 117,
     "neighboringStations": [
       {
-        "weight": 2,
-        "node": 116
+        "node": 116,
+        "weight": 3
       },
       {
-        "weight": 3,
-        "node": 118
+        "node": 118,
+        "weight": 3
       }
     ]
   },
@@ -1387,12 +1387,12 @@
     "id": 118,
     "neighboringStations": [
       {
-        "weight": 6,
-        "node": 117
+        "node": 117,
+        "weight": 3
       },
       {
-        "weight": 5,
-        "node": 119
+        "node": 119,
+        "weight": 5
       }
     ]
   },
@@ -1404,12 +1404,12 @@
     "id": 119,
     "neighboringStations": [
       {
-        "weight": 3,
-        "node": 118
+        "node": 118,
+        "weight": 5
       },
       {
-        "weight": 8,
-        "node": 120
+        "node": 120,
+        "weight": 8
       }
     ]
   },
@@ -1421,8 +1421,8 @@
     "id": 120,
     "neighboringStations": [
       {
-        "weight": 2,
-        "node": 119
+        "node": 119,
+        "weight": 8
       }
     ]
   },
@@ -1434,8 +1434,12 @@
     "id": 128,
     "neighboringStations": [
       {
-        "weight": 8,
-        "node": 69
+        "node": 67,
+        "weight": 9
+      },
+      {
+        "node": 69,
+        "weight": 7
       }
     ]
   },
@@ -1447,12 +1451,12 @@
     "id": 136,
     "neighboringStations": [
       {
-        "weight": 10,
-        "node": 87
+        "node": 87,
+        "weight": 9
       },
       {
-        "weight": 8,
-        "node": 89
+        "node": 89,
+        "weight": 7
       }
     ]
   }

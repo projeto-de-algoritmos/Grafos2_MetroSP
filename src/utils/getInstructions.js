@@ -6,8 +6,7 @@ const distances = new Array(150)
 const parents = new Array(150)
 const visited = new Array(150)
 
-const getMessages = (startStation, endStation, graph) => {
-  let mensagens = []
+const buildPath = (startStation, endStation, graph) => {
   const path = []
   let parent = graph[endStation].id
 
@@ -16,6 +15,13 @@ const getMessages = (startStation, endStation, graph) => {
     parent = parents[parent]
   }
   path.unshift(graph[parent])
+  return path
+}
+
+const getMessages = (startStation, endStation, graph) => {
+  let path = buildPath(startStation, endStation, graph)
+
+  let mensagens = []
 
   mensagens.push(`Embarque em ${path[0].stationName} sentido à estação ${path[1].stationName}`)
   for (let i = 1; i < path.length - 1; i += 1) {
@@ -32,12 +38,10 @@ const BFS = (startStation, endStation) => {
   const queue = []
 
   queue.push(stationsGraph[startStation])
-  distances.fill('Infinity')
   parents.fill(-1)
   visited.fill(false)
 
   visited[startStation] = true
-  distances[startStation] = 0
 
   while (queue.length > 0) {
     const currentNode = queue[0]
@@ -49,7 +53,6 @@ const BFS = (startStation, endStation) => {
 
     currentNode.neighboringStations.forEach((neigh) => {
       if (visited[neigh] === false) {
-        distances[neigh] = distances[currentNode.id] + 1
         parents[neigh] = currentNode.id
 
         visited[neigh] = true
@@ -61,46 +64,54 @@ const BFS = (startStation, endStation) => {
   return false
 }
 
+const findMinNode = (queue) => {
+  let minNode = queue[0]
+  let index = 0, indexMinNode = 0;
+  for (let station of queue) {
+    if (distances[station] < distances[minNode]) {
+      minNode = station
+      indexMinNode = index
+    }
+    index++;
+  }
+  return { currentNode: stationsGraphWeighted[minNode], index: indexMinNode }
+}
+
 const dijkstra = (startStation, endStation) => {
   const queue = []
 
-  queue.push(stationsGraphWeighted[startStation])
+  Object.keys(stationsGraphWeighted).forEach(station => {
+    if (station.id !== startStation) {
+      queue.push(station)
+    }
+    distances[station] = Infinity
+    parents[station] = -1
+  })
 
-  distances.fill('Infinity')
+  distances.fill(Infinity)
   parents.fill(-1)
-  visited.fill(false)
 
-  visited[startStation] = true
   distances[startStation] = 0
 
   while (queue.length > 0) {
-    const currentNode = queue[0]
-    queue.shift()
-
-    if (currentNode.id === endStation) {
-      return true
+    const { currentNode, index } = findMinNode(queue);
+    if (currentNode.id === 23) {
+      return
     }
+    queue.splice(index, 1)
 
     currentNode.neighboringStations.forEach((neigh) => {
-      if (visited[neigh.node] === false) {
-        distances[neigh.node] = distances[currentNode.id] + neigh.weight
+      const alt = distances[currentNode.id] + neigh.weight
+      if (alt < distances[neigh.node]) {
+        distances[neigh.node] = alt
         parents[neigh.node] = currentNode.id
-
-        visited[neigh.node] = true
-        queue.push(stationsGraphWeighted[neigh.node])
       }
     })
   }
-
-  return false
 }
 
 export const getInstructions = (startStation, endStation, isDijkstra) => {
-  const bfs = isDijkstra ? dijkstra(startStation, endStation) : BFS(startStation, endStation)
-
-  if (!bfs) {
-    return ['Rota não encontrada']
-  }
+  isDijkstra ? dijkstra(startStation, endStation) : BFS(startStation, endStation)
 
   return getMessages(startStation, endStation, isDijkstra ? stationsGraphWeighted : stationsGraph)
 }
