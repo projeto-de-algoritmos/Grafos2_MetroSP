@@ -77,7 +77,7 @@ const findMinNode = (queue) => {
   return { currentNode: stationsGraphWeighted[minNode], index: indexMinNode }
 }
 
-const dijkstra = (startStation, endStation) => {
+const Dijkstra = (startStation, endStation) => {
   const queue = []
 
   Object.keys(stationsGraphWeighted).forEach(station => {
@@ -111,7 +111,7 @@ const dijkstra = (startStation, endStation) => {
 }
 
 export const getInstructions = (startStation, endStation, isDijkstra) => {
-  isDijkstra ? dijkstra(startStation, endStation) : BFS(startStation, endStation)
+  isDijkstra ? Dijkstra(startStation, endStation) : BFS(startStation, endStation)
 
   return getMessages(startStation, endStation, isDijkstra ? stationsGraphWeighted : stationsGraph)
 }

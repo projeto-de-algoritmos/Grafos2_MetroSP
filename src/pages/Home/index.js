@@ -48,10 +48,6 @@ const Home = () => {
   }
 
   const handleTravel = () => {
-    if (partida.value === -1) {
-      travelError('Selecione a partida.')
-      return
-    }
     if (partida.value === -1 || destino.value === -1) {
       travelError('Selecione a partida e o destino.')
       return
@@ -66,20 +62,14 @@ const Home = () => {
 
   useEffect(() => {
     travelError()
-
-    if (isDijkstra) {
-      setInstructions([
-        'Digite a estação de partida para viajar por todas as estações.',
-      ])
-    } else {
-      setInstructions([
-        'Digite a estação de partida e a de destino para receber o trajeto.',
-      ])
-    }
-  }, [partida, destino, isDijkstra])
+  }, [partida, destino])
 
   useEffect(() => {
     map.current.zoom(width / 2, height / 2, 1.4)
+
+    setInstructions([
+      'Digite a estação de partida e a de destino para receber o trajeto.',
+    ])
   }, [])
 
   return (
