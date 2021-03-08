@@ -32,5 +32,11 @@ rode
 ```
 Navegue até [localhost:3000](http://localhost:3000)
 
+# Exemplos para teste
+|Estação de Partida | Estação de Destino |
+|-------------------|--------------------|
+|Tiradentes | Sé |
+|Vergueiro | Santos |
+
 ## Outros 
 Algumas estações mostradas no mapa podem não estar disponíveis para busca.

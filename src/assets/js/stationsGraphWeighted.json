@@ -165,7 +165,7 @@
       },
       {
         "node": 10,
-        "weight": 3
+        "weight": 4
       }
     ]
   },
@@ -178,7 +178,7 @@
     "neighboringStations": [
       {
         "node": 9,
-        "weight": 3
+        "weight": 4
       },
       {
         "node": 11,
@@ -283,7 +283,7 @@
       },
       {
         "node": 31,
-        "weight": 3
+        "weight": 1000
       }
     ]
   },
@@ -470,7 +470,7 @@
       },
       {
         "node": 27,
-        "weight": 100000
+        "weight": 1000
       },
       {
         "node": 106,
@@ -525,7 +525,7 @@
     "neighboringStations": [
       {
         "node": 15,
-        "weight": 3
+        "weight": 1000
       },
       {
         "node": 17,
