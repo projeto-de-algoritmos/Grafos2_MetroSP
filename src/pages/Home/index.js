@@ -29,7 +29,7 @@ const captions = [
 const Home = () => {
   const [partida, setPartida] = useState({ value: -1, label: 'Partida' })
   const [destino, setDestino] = useState({ value: -1, label: 'Destino' })
-  const [tourMode, setTourMode] = useState(true)
+  const [isDijkstra, setIsDijkstra] = useState(true)
   const [error, setError] = useState('')
   const [instructions, setInstructions] = useState([])
 
@@ -40,11 +40,7 @@ const Home = () => {
   const travelError = (message) => {
     if (message) {
       setError(message)
-    } else if (
-      !tourMode &&
-      partida.value !== -1 &&
-      partida.value === destino.value
-    ) {
+    } else if (partida.value !== -1 && partida.value === destino.value) {
       setError('A partida e o destino não podem ser iguais.')
     } else {
       setError('')
@@ -52,38 +48,28 @@ const Home = () => {
   }
 
   const handleTravel = () => {
-    if (tourMode && partida.value === -1) {
-      travelError('Selecione a partida.')
-      return
-    }
-    if (!tourMode && (partida.value === -1 || destino.value === -1)) {
+    if (partida.value === -1 || destino.value === -1) {
       travelError('Selecione a partida e o destino.')
       return
     }
-    if (!tourMode && partida.value === destino.value) {
+    if (partida.value === destino.value) {
       return
     }
 
-    const travel = getInstructions(partida.value, destino.value, tourMode)
+    const travel = getInstructions(partida.value, destino.value, isDijkstra)
     setInstructions(travel)
   }
 
   useEffect(() => {
     travelError()
-
-    if (tourMode) {
-      setInstructions([
-        'Digite a estação de partida para viajar por todas as estações.',
-      ])
-    } else {
-      setInstructions([
-        'Digite a estação de partida e a de destino para receber o trajeto.',
-      ])
-    }
-  }, [partida, destino, tourMode])
+  }, [partida, destino])
 
   useEffect(() => {
     map.current.zoom(width / 2, height / 2, 1.4)
+
+    setInstructions([
+      'Digite a estação de partida e a de destino para receber o trajeto.',
+    ])
   }, [])
 
   return (
@@ -102,11 +88,9 @@ const Home = () => {
             </div>
           </div>
           <div className='travel'>
-            {!tourMode ? (
-              <div className='travel-icon'>
-                <img src={pathImage} height={65} alt='path' />
-              </div>
-            ) : null}
+            <div className='travel-icon'>
+              <img src={pathImage} height={65} alt='path' />
+            </div>
             <div className='travel-choices'>
               <div className='choice'>
                 <Select
@@ -117,17 +101,15 @@ const Home = () => {
                   onChange={(option) => setPartida(option)}
                 />
               </div>
-              {!tourMode ? (
-                <div className='choice'>
-                  <Select
-                    className='travel_select_container'
-                    classNamePrefix='travel_select'
-                    value={destino}
-                    options={options}
-                    onChange={(option) => setDestino(option)}
-                  />
-                </div>
-              ) : null}
+              <div className='choice'>
+                <Select
+                  className='travel_select_container'
+                  classNamePrefix='travel_select'
+                  value={destino}
+                  options={options}
+                  onChange={(option) => setDestino(option)}
+                />
+              </div>
             </div>
           </div>
           <div className='travel-mode'>
@@ -136,13 +118,13 @@ const Home = () => {
                 <input
                   type='checkbox'
                   id='switch-input'
-                  checked={tourMode}
-                  onChange={() => setTourMode(!tourMode)}
+                  checked={isDijkstra}
+                  onChange={() => setIsDijkstra(!isDijkstra)}
                 />
                 <span className='slider' />
               </div>
               <div className='label'>
-                <p>Modo Turista</p>
+                <p>Utilizar Dijkstra</p>
               </div>
             </label>
           </div>
@@ -151,7 +133,7 @@ const Home = () => {
           </div>
           <div className='travel-submit'>
             <button type='button' onClick={handleTravel}>
-              {!tourMode ? 'Buscar' : 'Fazer Tour'}
+              Buscar
             </button>
           </div>
         </div>
