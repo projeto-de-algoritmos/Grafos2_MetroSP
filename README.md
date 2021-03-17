@@ -10,7 +10,7 @@
 | 18/0113666  |  Ítalo Álves Guimarães |
 
 ## Sobre 
-Este projeto tem como objetivo mostrar o menor caminho possível para percorrer todas as estações de metrô de São Paulo. O projeto utiliza dos algoritmos aprendidos na disciplina e do Algoritmo de Prim para achar o menor caminho possível entre todas as estações.
+Este projeto tem como objetivo mostrar o menor caminho possível para percorrer as estações de metrô de São Paulo. O projeto utiliza dos algoritmos aprendidos na disciplina e do Algoritmo de Dijkstra para achar o menor caminho possível entre todas as estações.
 
 ## Screenshots
 

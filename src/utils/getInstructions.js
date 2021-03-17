@@ -95,7 +95,7 @@ const Dijkstra = (startStation, endStation) => {
 
   while (queue.length > 0) {
     const { currentNode, index } = findMinNode(queue);
-    if (currentNode.id === 23) {
+    if (currentNode.id === endStation.id) {
       return
     }
     queue.splice(index, 1)
